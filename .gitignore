@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+
+# Tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.DS_Store
+
+# Datasets: Images/ is the raw source, clean/ and cls/ are generated.
+# Keep the class-name table; everything else is reproducible via scripts/.
+dataset/*
+!dataset/traffic_sign.csv
+
+# Training output
+runs/
+wandb/
+*.pt
+*.onnx
+*.engine
+*.torchscript
