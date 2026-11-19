@@ -1,0 +1,12 @@
+# Relative on purpose: this file is committed, so it must not contain local
+# absolute paths. Ultralytics resolves "path" from the current working
+# directory, so train.py rewrites it to an absolute value at runtime
+# (pretrained/runs/data.resolved.yaml).
+path: ../unified_dataset
+train: images/train
+val: images/val
+test: images/test
+
+# Classes
+names:
+  0: traffic_sign

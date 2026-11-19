@@ -20,6 +20,11 @@ dist/
 dataset/*
 !dataset/traffic_sign.csv
 
+# Unified detection dataset: commit the config, not the images.
+unified_dataset/*
+!unified_dataset/data.yaml
+unified_dataset.zip
+
 # Training output
 runs/
 wandb/
