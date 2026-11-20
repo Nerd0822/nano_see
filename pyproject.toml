@@ -3,5 +3,12 @@ name = "nano-see"
 version = "0.1.0"
 requires-python = ">=3.12"
 dependencies = [
+    "polars>=2.1.0",
+    "scikit-learn>=1.9.1",
+    "torch>=2.15.0",
+    "torchvision>=0.29.2",
     "ultralytics>=8.4.215",
 ]
+
+[[tool.uv.index]]
+url = "https://download.pytorch.org/whl/cpu"
