@@ -1,7 +1,7 @@
-from config import BEST_PATH, IMG_SIZE, RUNS_DIR
+from config import BEST_PATH, DATASET_PATH, IMG_SIZE, RUNS_DIR
 from ultralytics import YOLO
 
-SOURCE = "../unified_dataset/images/val"
+SOURCE = str(DATASET_PATH/"images"/"val")
 
 model = YOLO(str(BEST_PATH))
 model.predict(
